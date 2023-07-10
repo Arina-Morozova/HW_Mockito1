@@ -2,7 +2,7 @@ package ru.netology;
 
 public class PosterManager {
 
-    private String posters[] = new String [0];
+    private String posters[] = new String[0];
     private int limit;
 
     public PosterManager() {
@@ -30,12 +30,11 @@ public class PosterManager {
         int resultLength;
         if (limit < posters.length) {
             resultLength = this.limit;
-        }
-        else {
+        } else {
             resultLength = posters.length;
         }
         String[] result = new String[resultLength];
-        for (int i = 0; i < posters.length; i++) {
+        for (int i = 0; i < result.length; i++) {
             result[i] = posters[posters.length - 1 - i];
         }
         return result;
